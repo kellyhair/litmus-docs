@@ -54,7 +54,6 @@ To get started with any of the above platforms we will follow the following step
 
   - Wait for all the pods to get in a ready state. You can monitor this using
 
-
     ```
     watch kubectl get pods --all-namespaces
     ```
@@ -87,7 +86,6 @@ To get started with any of the above platforms we will follow the following step
 
   - Wait for all the pods to get in a ready state. You can monitor this using
 
-
     ```
     watch kubectl get pods --all-namespaces
     ```
@@ -113,18 +111,15 @@ To get started with any of the above platforms we will follow the following step
 
 - For running all experiments, run: 
 
-
   ```
   ./manage.py test --platform <platform-name>
   ```
 
 - For running selective experiments  
 
-
   ```
   ./manage.py test  --platform <platform-name> --test <test-name>
   ```
-
 
   Example: For running the pod-delete experiment.
 
@@ -145,7 +140,7 @@ Get more details about the flags used to configure and run the chaos tests pleas
 
 We can also generate the pdf report of the experiment result summary using <code>--report</code> flag as follow:
 
-```bash
+```
 ./manage.py test --report=yes
 ``` 
 It will generate a pdf report of name `chaos-report.pdf` in the current location containing ChaosResult summary.
